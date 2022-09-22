@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Yu-Gi-Oh';
+  src: url(fonts/YuGiOhName.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Yu-Gi-Oh-D';
+  src: url(fonts/YuGiOhDescriptions.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Yu-Gi-Oh-U';
+  src: url(fonts/YuGiOhUtilities.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background-color: #F1F0EE;
+}
+.general-container{
+  display: grid;
+  margin: 25px;
+  grid-template-columns: repeat(6, 120px);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner-card{
+  align-items: center;
+  justify-content: center;
+  max-width: 120px;
+  max-height: 173px;
+  border: 3.6px ridge #4C5964 ;
+  border-radius: 2px;
+ /*  background-image: url(https://img.freepik.com/premium-photo/closeup-sand-texture_63047-1951.jpg?w=740); */
+  background-image: url(https://img.freepik.com/premium-photo/beach-texture-background_23-2147836087.jpg?w=740);
+  background-size: cover;
+  background-repeat:repeat;
+}
+.name-card{
+  display: flex;
+  margin: auto;
+  margin-top: 3.4px;
+  margin-bottom: 6.8px;
+  max-width: 106.8px;
+  font-size: 10px;
+  border: 1px #b39148 outset;
+  align-items: center;
+  font-family: 'Yu-Gi-Oh', cursive;
+}
+.image-card{
+  display: flex;
+  margin: auto;
+  margin-bottom: 3.4px;
+  z-index: -1;
+  max-width: 100px;
+  border: 1px black outset;
+}
+.description-div{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  font-family: 'Yu-Gi-Oh-D';
+  margin-bottom: 3.4px;
+  padding: 1px 1px 0px 1px;
+  background-image: url(https://img.freepik.com/free-photo/watercolor-beige-texture_125540-1591.jpg?w=740&t=st=1663874979~exp=1663875579~hmac=75c0bd39fc20869e0b6878082d5c718dfbf5bd0d14104bbaa3b2cf99280a6e84);
+  background-size: cover;
+  background-repeat:repeat;
+  filter: opacity(.9);
+  max-width: 106.8px;
+  border: 1px outset;
+}
+.description-card{
+  width: 100%;
+  font-size: 3.84px;
+}
+.utilities-card{
+  display: flex;
+  width: 100%;
+  border-top: 1px solid black;
+  font-size: 4.46px;
+  justify-content: flex-end;
+  font-family: 'Yu-Gi-Oh-U';
+}
