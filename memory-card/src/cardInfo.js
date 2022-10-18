@@ -1,6 +1,6 @@
-[
+export const cardData = [
     {
-      "id": 1,
+      "id": "Death Knight",
       "name": "Death Knight",
       "image": "./img-cards/Death Knight.jpg",
       "description": "Death Knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power.",

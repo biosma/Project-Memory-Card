@@ -1,19 +1,20 @@
 import React from "react";
 import {useState, useEffect} from "react";
-import "./styles/styles.css"
-function Card({imagen}){
-    const name = imagen.toString()
+import "./styles/styles.css";
+
+
+function Card({name, imagen, description, utility}){
     return ( 
     <div className="conteiner-card">
-        <h2 className="name-card">{name}</h2> {/* Aca hacemos uso del Atributo name */}
+        <h2 className="name-card">{name}</h2>
         <img
             className="image-card"
-            src={`./img-cards/${imagen}.jpg`}
-            alt={`Foto de ${imagen}`}
+            src={`${imagen}`}
+            alt={`Foto de ${name}`}
         />
         <div className="description-div">
-            <p className="description-card">Death Knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power.</p>    
-            <p className="utilities-card">Damage</p>
+            <p className="description-card">{description}</p>    
+            <p className="utilities-card">{utility}</p>
         </div>
     </div>
     );
