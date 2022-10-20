@@ -1,20 +1,18 @@
 import React from "react";
-import {useState, useEffect} from "react";
 import "./styles/styles.css";
 
-
-function Card({name, imagen, description, utility}){
+function Card({data, handleCardClick}){
     return ( 
-    <div className="conteiner-card">
-        <h2 className="name-card">{name}</h2>
+    <div className="conteiner-card" onClick={handleCardClick}>
+        <h2 className="name-card">{data.name}</h2>
         <img
             className="image-card"
-            src={`${imagen}`}
-            alt={`Foto de ${name}`}
+            src={`${data.imagen}`}
+            alt={`Foto de ${data.name}`}
         />
         <div className="description-div">
-            <p className="description-card">{description}</p>    
-            <p className="utilities-card">{utility}</p>
+            <p className="description-card">{data.description}</p>    
+            <p className="utilities-card">{data.utility}</p>
         </div>
     </div>
     );
