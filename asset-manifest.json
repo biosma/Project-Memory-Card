@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Project-Memory-Card/static/css/main.95d3515d.css",
-    "main.js": "/Project-Memory-Card/static/js/main.357fe05a.js",
+    "main.css": "/Project-Memory-Card/static/css/main.bc69b581.css",
+    "main.js": "/Project-Memory-Card/static/js/main.fe643fc1.js",
     "static/media/YuGiOhDescriptions.ttf": "/Project-Memory-Card/static/media/YuGiOhDescriptions.796bf97a2c85d775ae5c.ttf",
     "static/media/YuGiOhName.ttf": "/Project-Memory-Card/static/media/YuGiOhName.9956c71fc8fcccf6bc61.ttf",
     "static/media/YuGiOhUtilities.ttf": "/Project-Memory-Card/static/media/YuGiOhUtilities.6402086721de3d0e42a7.ttf",
     "index.html": "/Project-Memory-Card/index.html",
-    "main.95d3515d.css.map": "/Project-Memory-Card/static/css/main.95d3515d.css.map",
-    "main.357fe05a.js.map": "/Project-Memory-Card/static/js/main.357fe05a.js.map"
+    "main.bc69b581.css.map": "/Project-Memory-Card/static/css/main.bc69b581.css.map",
+    "main.fe643fc1.js.map": "/Project-Memory-Card/static/js/main.fe643fc1.js.map"
   },
   "entrypoints": [
-    "static/css/main.95d3515d.css",
-    "static/js/main.357fe05a.js"
+    "static/css/main.bc69b581.css",
+    "static/js/main.fe643fc1.js"
   ]
 }
