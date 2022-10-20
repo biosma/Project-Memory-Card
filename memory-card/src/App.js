@@ -12,9 +12,9 @@ function App() {
 
   const handleCardClick = (e) => {
     const cardName = e.target.parentNode.lastChild.textContent
-    playRound(cardName)
+    playRound(cardName) 
   }
-  const playRound = (cardName) => {
+  const playRound = (cardName) => { //Aca se da el shuffle, pues se actualiza alguna dependencia
     if (clickedCards.includes(cardName)) {
       resetGame()
     } else {

@@ -7,7 +7,7 @@ function Card({data, handleCardClick}){
         <h2 className="name-card">{data.name}</h2>
         <img
             className="image-card"
-            src={`${data.imagen}`}
+            src={`${data.image}`}
             alt={`Foto de ${data.name}`}
         />
         <div className="description-div">
