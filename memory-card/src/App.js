@@ -33,14 +33,14 @@ function App() {
   return (
     <div className="general-container">
       <div className="score-container">
-        <p className="current-score">{currentScore}</p>
-        <p className="best-score">{bestScore}</p>
+        <p className="current-score">Current Score:{currentScore}</p>
+        <p className="best-score">Best Score:{bestScore}</p>
       </div>
-      {shuffleObj(cardData).map((data, key) => {
+      <div className="cardsGrid">{shuffleObj(cardData).map((data, key) => {
         return(
       <Card key={key} data={data} handleCardClick={handleCardClick}/>
         )
-      })}
+      })}</div>
     </div>
   );
 }

@@ -27,68 +27,91 @@ body{
     background-color: #F1F0EE;
 }
 .general-container{
-  display: grid;
-  margin: 25px;
-  grid-template-columns: repeat(6, 120px);
-  grid-template-rows: repeat(2, 200px);
-  grid-gap: 25px;
-  align-items: center;
-  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
-.conteiner-card{
+.score-container{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+}
+.current-score,.best-score{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 5px;
+}
+.cardsGrid{
+  width: 90vw;
+  height: 90vh;
+  display: grid;
   align-items: center;
   justify-content: center;
-  max-width: 120px;
-  max-height: 173px;
-  border: 3.6px ridge #4C5964 ;
-  border-radius: 2px;
- /*  background-image: url(https://img.freepik.com/premium-photo/closeup-sand-texture_63047-1951.jpg?w=740); */
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2%;
+  margin: 0px auto;
+  
+}
+
+.conteiner-card{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   background-image: url(https://img.freepik.com/premium-photo/beach-texture-background_23-2147836087.jpg?w=740);
   background-size: cover;
-  background-repeat:repeat;
+  border: .5rem ridge #4C5964 ;
+  border-radius: 2px;
 }
 .name-card{
+  width: 87.67%;
+  height: 7%;
   display: flex;
   margin: auto;
-  margin-top: 3.4px;
-  margin-bottom: 6.8px;
-  max-width: 106.8px;
-  font-size: 10px;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  font-size: 125%;
   border: 1px #b39148 outset;
   align-items: center;
   font-family: 'Yu-Gi-Oh', cursive;
 }
 .image-card{
+  width: 75%;
+  height: 60%;
   display: flex;
   margin: auto;
-  margin-bottom: 3.4px;
+  margin-bottom: 5%;
   z-index: -1;
-  max-width: 100px;
   border: 1px black outset;
 }
 .description-div{
+  width: 85%;
+  height: 20%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
-  font-family: 'Yu-Gi-Oh-D';
-  margin-bottom: 3.4px;
+  margin: 0px auto;
+  margin-top: 2%;
   padding: 1px 1px 0px 1px;
   background-image: url(https://img.freepik.com/free-photo/watercolor-beige-texture_125540-1591.jpg?w=740&t=st=1663874979~exp=1663875579~hmac=75c0bd39fc20869e0b6878082d5c718dfbf5bd0d14104bbaa3b2cf99280a6e84);
   background-size: cover;
   background-repeat:repeat;
   filter: opacity(.9);
-  max-width: 106.8px;
   border: 1px outset;
 }
 .description-card{
   width: 100%;
-  font-size: 3.84px;
+  height: 80%;
+  font-family: 'Yu-Gi-Oh-D';
+  font-size: 33%;
 }
 .utilities-card{
   display: flex;
   width: 100%;
-  border-top: 1px solid black;
-  font-size: 4.46px;
+  height: 20%;
   justify-content: flex-end;
   font-family: 'Yu-Gi-Oh-U';
+  font-size: 35%;
+  border-top: 1px solid black;
 }
